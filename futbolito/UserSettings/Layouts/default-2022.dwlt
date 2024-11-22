@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 92
+  controlID: 97
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 116
+  controlID: 121
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 39
+  controlID: 96
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -375,7 +375,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/mesa/mesa.fbx_Collection
+    - Assets/barcelona/Alba.fbx_pique
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -383,16 +383,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 48
   m_LastFolders:
-  - Assets/mesa/mesa.fbx_Collection
+  - Assets/barcelona/Alba.fbx_pique
   m_LastFoldersGridSize: 48
   m_LastProjectPath: C:\Users\juanl\Documents\Unity\ProDAF_futbolito\futbolito
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 32}
-    m_SelectedIDs: 145b0000
-    m_LastClickedID: 23316
-    m_ExpandedIDs: 000000004a1e0000de5a0000e05a0000105b000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 160}
+    m_SelectedIDs: 561e0000
+    m_LastClickedID: 7766
+    m_ExpandedIDs: 000000004a1e0000561e0000985d00009a5d0000a25d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -420,7 +420,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de5a0000e05a0000
+    m_ExpandedIDs: 00000000985d00009a5d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,18 +451,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c623000000000000761e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: mesa.fbm
-      m_OriginalName: mesa.fbm
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 23304
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
@@ -562,7 +562,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 82f9ffffc6f9ffffeaf9ffff
+      m_ExpandedIDs: 56f5ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -916,9 +916,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.307487, y: 4.353272, z: 7.51254}
+    m_Target: {x: 4.956818, y: 4.5533385, z: 0.5572601}
     speed: 2
-    m_Value: {x: 8.307487, y: 4.353272, z: 7.51254}
+    m_Value: {x: 4.956818, y: 4.5533385, z: 0.5572601}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -964,13 +964,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14018874, y: 0.83208764, z: -0.2440617, w: -0.47795123}
+    m_Target: {x: 0.17923103, y: 0.55328256, z: -0.123322114, w: 0.8040984}
     speed: 2
-    m_Value: {x: -0.1387408, y: 0.8338726, z: -0.24322739, w: -0.47565523}
+    m_Value: {x: 0.17904335, y: 0.5544803, z: -0.1235891, w: 0.8032564}
   m_Size:
-    m_Target: 3.8984587
+    m_Target: 7.194548
     speed: 2
-    m_Value: 3.7305825
+    m_Value: 7.194548
   m_Ortho:
     m_Target: 0
     speed: 2
