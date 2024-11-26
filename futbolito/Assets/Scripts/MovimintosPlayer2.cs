@@ -1,16 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimintos : MonoBehaviour
+public class MovimintosPlayer2 : MonoBehaviour
 {
-    public EstadosDeTablero estados;
-    public DetectorDeColisiones detectorIzquierdoPalo1; // Detector para el lado izquierdo del palo 1
-    public DetectorDeColisiones detectorDerechoPalo1;  // Detector para el lado derecho del palo 1
+    public EstadoDePlayer2 estados;
+    public DetectorDeColisiones detectorIzquierdoPalo5; // Detector para el lado izquierdo del palo 1
+    public DetectorDeColisiones detectorDerechoPalo5;  // Detector para el lado derecho del palo 1
 
-    public DetectorDeColisiones detectorIzquierdoPalo4; // Detector para el lado izquierdo del palo 4
-    public DetectorDeColisiones detectorDerechoPalo4;  // Detector para el lado derecho del palo 4
+    public DetectorDeColisiones detectorIzquierdoPalo8; // Detector para el lado izquierdo del palo 4
+    public DetectorDeColisiones detectorDerechoPalo8;  // Detector para el lado derecho del palo 4
 
-    public GameObject palo1; // Referencia al objeto del palo 1
-    public GameObject palo4; // Referencia al objeto del palo 4
+    public GameObject palo5; // Referencia al objeto del palo 1
+    public GameObject palo8; // Referencia al objeto del palo 4
 
     public float velocidad = 30f; // Velocidad de movimiento
     public float velocidadRotacion = 500f; // Velocidad de rotación
@@ -19,23 +21,23 @@ public class Movimintos : MonoBehaviour
 
     void Update()
     {
-        if (estados.palo1)
+        if (estados.palo5)
         {
-            Mover(palo1, detectorIzquierdoPalo1, detectorDerechoPalo1);
+            Mover(palo5, detectorIzquierdoPalo5, detectorDerechoPalo5);
         }
-        else if (estados.palo4)
+        else if (estados.palo8)
         {
-            Mover(palo4, detectorIzquierdoPalo4, detectorDerechoPalo4);
+            Mover(palo8, detectorIzquierdoPalo8, detectorDerechoPalo8);
         }
     }
 
     void Mover(GameObject palo, DetectorDeColisiones detectorIzquierdo, DetectorDeColisiones detectorDerecho)
     {
         // Movimiento horizontal
-        float movimiento = Input.GetAxis("Horizontal");
+        float movimiento = Input.GetAxis("HorizontalPlayer2");
 
         // Rotación
-        float rotacion = Input.GetAxis("Vertical"); // Usa el eje Vertical para controlar la rotación
+        float rotacion = Input.GetAxis("VerticalPlayer2"); // Usa el eje Vertical para controlar la rotación
 
         // Permitir el movimiento hacia la derecha si no está colisionando con el muro derecho
         if (movimiento > 0 && !detectorDerecho.estaColisionando)
@@ -57,5 +59,6 @@ public class Movimintos : MonoBehaviour
         {
             palo.transform.Rotate(Vector3.forward, rotacion * velocidadRotacion * 2f * Time.deltaTime);
         }
+
     }
 }

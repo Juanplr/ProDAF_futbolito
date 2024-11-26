@@ -9,7 +9,7 @@ public class DetectorDeColisiones : MonoBehaviour
         if (other.CompareTag("Muro"))
         {
             estaColisionando = true;
-            Debug.Log("Colisión detectada con: " + other.gameObject.name);
+            //Debug.Log("Colisión detectada con: " + other.gameObject.name);
         }
     }
 
@@ -18,7 +18,7 @@ public class DetectorDeColisiones : MonoBehaviour
         if (other.CompareTag("Muro"))
         {
             estaColisionando = false;
-            Debug.Log("Saliste de colisión con: " + other.gameObject.name);
+            //Debug.Log("Saliste de colisión con: " + other.gameObject.name);
         }
     }
 }

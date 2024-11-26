@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientosManoI : MonoBehaviour
+public class MoviminetosManoIPlaye2 : MonoBehaviour
 {
-    public EstadosDeTablero estados;
+    public EstadoDePlayer2 estados;
 
-    public GameObject palo2;
-    public GameObject palo3;
+    public GameObject palo6;
+    public GameObject palo7;
 
     // Detectores de colisiones para cada palo
-    public DetectorDeColisiones detectorIzquierdo2;
-    public DetectorDeColisiones detectorDerecho2;
-    public DetectorDeColisiones detectorIzquierdo3;
-    public DetectorDeColisiones detectorDerecho3;
+    public DetectorDeColisiones detectorIzquierdo6;
+    public DetectorDeColisiones detectorDerecho6;
+    public DetectorDeColisiones detectorIzquierdo7;
+    public DetectorDeColisiones detectorDerecho7;
 
     public float velocidad = 30f; // Velocidad de movimiento
     public float velocidadRotacion = 500f; // Velocidad de rotación
@@ -23,32 +23,32 @@ public class MovimientosManoI : MonoBehaviour
     void Update()
     {
         // Controlar el movimiento del palo 2
-        if (estados.palo2)
+        if (estados.palo6)
         {
-            Mover(palo2, detectorIzquierdo2, detectorDerecho2);
+            Mover(palo6, detectorIzquierdo6, detectorDerecho6);
         }
         // Controlar el movimiento del palo 3
-        else if (estados.palo3)
+        else if (estados.palo7)
         {
-            Mover(palo3, detectorIzquierdo3, detectorDerecho3);
+            Mover(palo7, detectorIzquierdo7, detectorDerecho7);
         }
     }
 
     void Mover(GameObject palo, DetectorDeColisiones detectorIzquierdo, DetectorDeColisiones detectorDerecho)
     {
         // Movimiento horizontal del palo usando el joystick izquierdo (Horizontal2)
-        float movimiento = Input.GetAxis("Horizontal2");
+        float movimiento = Input.GetAxis("Horizontal2Player2");
         if (Mathf.Abs(movimiento) < zonaMuerta) movimiento = 0; // Aplicar zona muerta
 
         // Rotación del palo usando el joystick izquierdo (Vertical2)
-        float rotacion = Input.GetAxis("Vertical2");
+        float rotacion = Input.GetAxis("Vertical2Player2");
         if (Mathf.Abs(rotacion) < zonaMuerta) rotacion = 0; // Aplicar zona muerta
 
         // Leer el joystick derecho para rotación y movimiento avanzado
-        float movimiento2 = Input.GetAxis("JoystickRightHorizontal"); // Eje Horizontal del joystick derecho
+        float movimiento2 = Input.GetAxis("JoystickRightHorizontalPlayer2"); // Eje Horizontal del joystick derecho
         if (Mathf.Abs(movimiento2) < zonaMuerta) movimiento2 = 0; // Aplicar zona muerta
 
-        float rotacion2 = Input.GetAxis("JoystickRightVertical");     // Eje Vertical del joystick derecho
+        float rotacion2 = Input.GetAxis("JoystickRightVerticalPlayer2");     // Eje Vertical del joystick derecho
         if (Mathf.Abs(rotacion2) < zonaMuerta) rotacion2 = 0; // Aplicar zona muerta
 
         // Movimiento hacia la derecha si no hay colisión con el muro derecho
