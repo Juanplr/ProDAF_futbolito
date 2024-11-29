@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Muro
+  - PorteriaRM
+  - Balon
+  - PorteriaB
   layers:
   - Default
   - TransparentFX

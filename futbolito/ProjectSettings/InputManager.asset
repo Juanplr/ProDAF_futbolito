@@ -25,10 +25,10 @@ InputManager:
     m_Name: HorizontalPlayer2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: g
-    altPositiveButton: j
+    negativeButton: f
+    positiveButton: h
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -59,8 +59,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
-    altNegativeButton: k
-    altPositiveButton: p
+    altNegativeButton: j
+    altPositiveButton: l
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -155,8 +155,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
-    altNegativeButton: h
-    altPositiveButton: y
+    altNegativeButton: t
+    altPositiveButton: g
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -185,8 +185,8 @@ InputManager:
     m_Name: Vertical2Player2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: o
-    positiveButton: l
+    negativeButton: k
+    positiveButton: i
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
