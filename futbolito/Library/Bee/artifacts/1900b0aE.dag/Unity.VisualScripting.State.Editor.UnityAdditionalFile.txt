@@ -1,1 +1,5 @@
-C:\Users\juanl\Documents\Unity\ProDAF_futbolito\futbolito
+<<<<<<< HEAD
+C:\Users\juanl\Documents\ProDAF_futbolito\futbolito
+=======
+C:\Users\reyes\Desktop\ProyectoFutbolito\ProDAF_futbolito\futbolito
+>>>>>>> Frank
